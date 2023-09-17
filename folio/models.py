@@ -20,8 +20,5 @@ class Project(models.Model):
         return self.title
     
 class ProjectImage(models.Model):
-    project = models.ForeignKey(Project, default=None, on_delete=models.CASCADE)
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='images')
     image = models.ImageField(upload_to='folio/images/', default='folio/images/default.jpg')
-    
-    def __str__(self):
-        return self.project.title
