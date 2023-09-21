@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d678cd19501c83d6272e94ba9d25241548247113557b1c73830b6f35d875581f"
+            "sha256": "cc1c818258720f158d0ba9b2c5bf4780adca485a869ddff31ec7f7d5aeecdcc7"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -59,6 +59,23 @@
             "index": "pypi",
             "markers": "python_version >= '3.5'",
             "version": "==0.93.4"
+        },
+        "gunicorn": {
+            "hashes": [
+                "sha256:3213aa5e8c24949e792bcacfc176fef362e7aac80b76c56f6b5122bf350722f0",
+                "sha256:88ec8bff1d634f98e61b9f65bc4bf3cd918a90806c6f5c48bc5603849ec81033"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.5'",
+            "version": "==21.2.0"
+        },
+        "packaging": {
+            "hashes": [
+                "sha256:994793af429502c4ea2ebf6bf664629d07c1a9fe974af92966e4b8d2df7edc61",
+                "sha256:a392980d2b6cffa644431898be54b0045151319d1e7ec34f0cfed48767dd334f"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==23.1"
         },
         "pillow": {
             "hashes": [
@@ -143,6 +160,15 @@
             ],
             "markers": "sys_platform == 'win32'",
             "version": "==2023.3"
+        },
+        "waitress": {
+            "hashes": [
+                "sha256:7500c9625927c8ec60f54377d590f67b30c8e70ef4b8894214ac6e4cad233d2a",
+                "sha256:780a4082c5fbc0fde6a2fcfe5e26e6efc1e8f425730863c04085769781f51eba"
+            ],
+            "index": "pypi",
+            "markers": "python_full_version >= '3.7.0'",
+            "version": "==2.1.2"
         },
         "whitenoise": {
             "hashes": [
