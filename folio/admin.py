@@ -15,3 +15,11 @@ class ProjectAdmin(admin.ModelAdmin):
     inlines = [ProjectImageInline]
     pass
 
+class ExperienceTechnologyInline(admin.TabularInline):
+    model = models.ExperienceTechnology
+    readonly_fields = ('id',)
+
+@admin.register(models.Experience)
+class ExperienceAdmin(admin.ModelAdmin):
+    inlines = [ExperienceTechnologyInline]
+    pass

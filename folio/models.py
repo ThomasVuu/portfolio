@@ -20,5 +20,22 @@ class Project(models.Model):
         return self.title
     
 class ProjectImage(models.Model):
-    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='images')
     image = models.ImageField(upload_to='folio/images/', default='folio/images/default.jpg')
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='images')
+
+class Experience(models.Model):
+    company = models.CharField(max_length=200)
+    title = models.CharField(max_length=200)
+    start_date = models.DateField()
+    end_date = models.DateField(blank=True, null=True)
+    main_tech = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.title
+    
+class ExperienceTechnology(models.Model):
+    name = models.CharField(max_length=200)
+    experience = models.ForeignKey(Experience, on_delete=models.CASCADE, related_name='technologies')
+
+    def __str__(self):
+        return self.name
