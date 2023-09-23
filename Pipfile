@@ -12,6 +12,7 @@ whitenoise = "*"
 drf-nested-routers = "*"
 gunicorn = "*"
 waitress = "*"
+dj-database-url = "*"
 
 [dev-packages]
 
