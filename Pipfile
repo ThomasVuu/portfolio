@@ -13,6 +13,7 @@ drf-nested-routers = "*"
 gunicorn = "*"
 waitress = "*"
 dj-database-url = "*"
+mysqlclient = "*"
 
 [dev-packages]
 
