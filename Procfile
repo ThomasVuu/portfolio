@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: waitress-serve portfolio.wsgi:application
+web: gunicorn storefront.wsgi
